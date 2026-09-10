@@ -1,244 +1,528 @@
-/*Seccion de Inicio*/
-body {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYG7ILok8N9hcU5jn_J28IeZXXq5ODck-3xgcdEKtXbA&s=10);
-}
+/* =========================
+   ESTILOS GENERALES
+   ========================= */
 
-.Inicio {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;
-    display: grid;
-    place-items: center;
-    /*background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYG7ILok8N9hcU5jn_J28IeZXXq5ODck-3xgcdEKtXbA&s=10);*/
-    color: antiquewhite;
-}
-
-img {
-    height: 320px;
-    width: 550px;
-}
-
-
-/* Seccion de artistas */
-.artistas{
-    padding: 20px;
-    text-align: center;
-    color: #f2f2f2;
-}
-
-/* Tarjeta de cada artista */
-.tarjeta-artista {
-    background-color: rgb(250, 127, 147);
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 20px auto;
-    max-width: 300px;
-    /* ancho máximo de la tarjeta */
-    text-align: center;
-}
-
-/* Imagen dentro de la tarjeta */
-.tarjeta-artista img {
-    width: 100%;
-    /* que ocupe el ancho de la tarjeta */
-    border-radius: 8px;
-}
-
-/*Seccion de Experiencias*/
-.encabezado {
-    color: rgb(96, 96, 202);
-    background-color: lightblue;
-    border: 5px solid black;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 30px;
-    text-align: center;
-}
-
-/*.zona{
-    color: rgb(96, 96, 202);
-    background-color: lightblue;
-    border: 5px solid black;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 30px;
-    
-}*/
-
-img {
-    width: 500px;
-    height: 500px;
-}
-
-.lista {
-    line-height: 24px;
-    text-align: justify;
-}
-
-.lista ul {
-    margin-top: 5px;
-    margin-left: 20px;
-    font-size: 0.95;
-}
-
-.lista>li {
-    margin: 15px;
-}
-
-.comida,
-.disco,
-.zona {
-    width: 400px;
-    padding: 20px;
-    border: 2px solid black;
-    margin: 15px;
-    border-radius: 10px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.comida img,
-.disco img,
-.zona img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.comida h2,
-.disco h3,
-.zona h1 {
-    color: #333;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.comida p,
-.disco p {
-    color: #555;
-    font-size: 14px;
-    line-height: 1.5;
-}
-
-.comida ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: left;
-}
-
-.comida ul li {
-    padding: 5px 0;
-    border-bottom: 1px dashed #ccc;
-}
-
-.comida ul li:last-child {
-    border-bottom: none;
-    font-style: italic;
-    color: #888;
-}
-
-/*Seccion de Boletos*/
-/*Fondo genral*/
 body {
     margin: 0;
-    padding: 40px;
+    padding: 0;
+
+    background-color: #15151a;
+
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f2f2f2;
-}
-
-/*Titulo principal*/
-#inicio {
-    text-align: center;
-    font-size: 36px;
     color: #f2f2f2;
-    letter-spacing: 2px;
 }
 
-/*Agrupar tarjetas*/
-.contenedor-tarjetas,
-.contenedor-zonas,
-.contenedor-artistas {
+
+/* Selector agrupado */
+
+h1,
+h2,
+h3,
+h4 {
+    color: #f2f2f2;
+}
+
+
+p,
+li {
+    line-height: 1.6;
+}
+
+
+/* =========================
+   INICIO
+   ========================= */
+
+.Inicio {
+    max-width: 1150px;
+    min-height: 450px;
+
+    margin: 30px auto;
+    padding: 40px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.65)
+        ),
+        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYG7ILok8N9hcU5jn_J28IeZXXq5ODck-3xgcdEKtXbA&s=10");
+
+    background-size: cover;
+    background-position: center;
+
+    border: 2px solid #33333b;
+    border-radius: 20px;
+
     display: flex;
+    flex-direction: column;
+
     justify-content: center;
-    gap: 25px;
-}
-
-
-/*Tarjetas*/
-.card {
-    width: 280px;
-    padding: 25px;
-    border: 2px solid #dddddd;
-    margin: 10px auto;
-    border-radius: 15px;
-
-    background-color: white;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    align-items: center;
 
     text-align: center;
 }
 
-/*Titulo Boleto*/
-.General h2,
-.Gradas h2,
-.VIP h2 {
-    font-size: 25px;
+
+.Inicio h1 {
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+
+.Inicio h2 {
+    color: #ff5c8a;
     margin-top: 0;
 }
 
 
-/* Precios */
-.General p,
-.Gradas p,
-.VIP p {
-    font-size: 28px;
-    font-weight: bold;
-    color: #2f6f8f;
+.Inicio p {
+    font-size: 18px;
+    max-width: 650px;
 }
 
-.card ol {
-    text-align: left;
-    line-height: 1.6;
-    min-height: 120px;
-    padding-left: 25px;
-}
 
-/* Pseudoclases */
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.25);
-}
+/* =========================
+   BOTONES
+   ========================= */
 
 button {
-    background-color: #2f6f8f;
+    background-color: #ff5c8a;
     color: white;
 
     border: none;
     border-radius: 8px;
 
     padding: 12px 25px;
+
     font-size: 16px;
+    font-weight: bold;
 
     cursor: pointer;
 }
 
+
+/* Hover del botón */
+
 button:hover {
-    background-color: #224f66;
+    background-color: #e74774;
 }
+
+
+/* Active del botón */
 
 button:active {
     transform: scale(0.95);
 }
 
+
+/* Selector de ID */
+
 #Comprar {
+    margin-top: 15px;
+}
+
+
+/* =========================
+   ARTISTAS
+   ========================= */
+
+.contenedor-artistas {
+    max-width: 1200px;
+
+    margin: 50px auto;
+    padding: 20px;
+}
+
+
+.artistas {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.artistas h3 {
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    font-size: 32px;
+
+    margin-bottom: 10px;
+
+    color: #ff5c8a;
+}
+
+
+/* Tarjeta de cada artista */
+
+.tarjeta-artista {
+    width: auto;
+
+    padding: 15px;
+    margin: 10px;
+
+    background-color: #222228;
+
+    border: 2px solid #33333b;
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+    transition: 0.3s;
+}
+
+
+/* Imagen de artistas */
+
+.tarjeta-artista img {
+    width: 100%;
+    height: 190px;
+
+    object-fit: cover;
+
     border-radius: 10px;
 }
 
-#Comprar:hover {
-    background-color: #224f66;
+
+.tarjeta-artista h4 {
+    color: #ff5c8a;
+
+    font-size: 21px;
+
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
-#Comprar:active {
-    transform: scale(0.95);
+
+.tarjeta-artista p {
+    color: #d5d5d5;
+
+    font-size: 14px;
+}
+
+
+/* Pseudoclase hover en artistas */
+
+.tarjeta-artista:hover {
+    transform: translateY(-8px);
+
+    border-color: #ff5c8a;
+
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.5);
+}
+
+
+/* =========================
+   EXPERIENCIAS
+   ========================= */
+
+.encabezado {
+    max-width: 1100px;
+
+    margin: 50px auto 20px;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+
+.encabezado h1 {
+    color: #ff5c8a;
+}
+
+
+.encabezado p {
+    color: #d5d5d5;
+}
+
+
+/* Contenedor de las experiencias */
+
+.contenedor-zonas {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+}
+
+
+/* Tarjetas de experiencias */
+
+.zona,
+.comida,
+.disco {
+    width: 300px;
+
+    padding: 20px;
+    margin: 10px;
+
+    background-color: #222228;
+
+    border: 2px solid #33333b;
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Imágenes de experiencias */
+
+.zona img,
+.comida img,
+.disco img {
+    width: 100%;
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+
+/* Títulos de experiencias */
+
+.zona h1,
+.comida h2,
+.disco h3 {
+    color: #ff5c8a;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* Textos de experiencias */
+
+.zona p,
+.comida p,
+.disco p,
+.zona li,
+.comida li {
+    color: #d5d5d5;
+}
+
+
+/* Lista de zona de arte */
+
+.lista {
+    text-align: left;
+
+    padding-left: 20px;
+}
+
+
+.lista ul {
+    margin-top: 5px;
+    margin-left: 10px;
+
+    padding-left: 15px;
+}
+
+
+.lista > li {
+    margin-bottom: 15px;
+}
+
+
+/* Lista Food Trucks */
+
+.comida ul {
+    padding-left: 20px;
+
+    text-align: left;
+}
+
+
+.comida ul li {
+    padding: 5px 0;
+
+    border-bottom: 1px dashed #555;
+}
+
+
+.comida ul li:last-child {
+    border-bottom: none;
+
+    font-style: italic;
+}
+
+
+/* =========================
+   BOLETOS
+   ========================= */
+
+.Boletos {
+    max-width: 1100px;
+
+    margin: 60px auto;
+}
+
+
+/* Selector de ID */
+
+#inicio {
+    text-align: center;
+
+    font-size: 36px;
+
+    color: #ff5c8a;
+
+    letter-spacing: 2px;
+}
+
+
+/* Agrupar las tarjetas */
+
+.contenedor-tarjetas {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+}
+
+
+/* Clase reutilizada en los boletos */
+
+.card {
+    width: 280px;
+
+    padding: 25px;
+
+    border: 2px solid #33333b;
+
+    margin: 10px;
+
+    border-radius: 15px;
+
+    background-color: #222228;
+
+    text-align: center;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+    transition: 0.3s;
+}
+
+
+/* Selector agrupado */
+
+.General h2,
+.Gradas h2,
+.VIP h2 {
+    color: #ff5c8a;
+
+    font-size: 25px;
+
+    margin-top: 0;
+}
+
+
+/* Precios */
+
+.General p,
+.Gradas p,
+.VIP p {
+    font-size: 28px;
+
+    font-weight: bold;
+
+    color: white;
+}
+
+
+/* Características de los boletos */
+
+.card ol {
+    min-height: 120px;
+
+    padding-left: 25px;
+
+    text-align: left;
+
+    line-height: 1.6;
+}
+
+
+/* Pseudoclase hover */
+
+.card:hover {
+    transform: translateY(-6px);
+
+    border-color: #ff5c8a;
+
+    box-shadow: 0 9px 18px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================
+   LÍNEAS
+   ========================= */
+
+hr {
+    border: none;
+
+    border-top: 1px solid #44444d;
+
+    margin: 30px 0;
+}
+
+
+/* =========================
+   ADAPTACIÓN A PANTALLAS PEQUEÑAS
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .artistas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .contenedor-zonas,
+    .contenedor-tarjetas {
+        flex-wrap: wrap;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .Inicio {
+        margin: 15px;
+        padding: 20px;
+    }
+
+
+    .Inicio h1 {
+        font-size: 38px;
+    }
+
+
+    .artistas {
+        grid-template-columns: 1fr;
+    }
+
+
+    .card,
+    .zona,
+    .comida,
+    .disco {
+        width: 80%;
+    }
+
 }
