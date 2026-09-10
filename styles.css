@@ -1,0 +1,244 @@
+/*Seccion de Inicio*/
+body {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYG7ILok8N9hcU5jn_J28IeZXXq5ODck-3xgcdEKtXbA&s=10);
+}
+
+.Inicio {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    display: grid;
+    place-items: center;
+    /*background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYG7ILok8N9hcU5jn_J28IeZXXq5ODck-3xgcdEKtXbA&s=10);*/
+    color: antiquewhite;
+}
+
+img {
+    height: 320px;
+    width: 550px;
+}
+
+
+/* Seccion de artistas */
+.artistas{
+    padding: 20px;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+/* Tarjeta de cada artista */
+.tarjeta-artista {
+    background-color: rgb(250, 127, 147);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 300px;
+    /* ancho máximo de la tarjeta */
+    text-align: center;
+}
+
+/* Imagen dentro de la tarjeta */
+.tarjeta-artista img {
+    width: 100%;
+    /* que ocupe el ancho de la tarjeta */
+    border-radius: 8px;
+}
+
+/*Seccion de Experiencias*/
+.encabezado {
+    color: rgb(96, 96, 202);
+    background-color: lightblue;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 30px;
+    text-align: center;
+}
+
+/*.zona{
+    color: rgb(96, 96, 202);
+    background-color: lightblue;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 30px;
+    
+}*/
+
+img {
+    width: 500px;
+    height: 500px;
+}
+
+.lista {
+    line-height: 24px;
+    text-align: justify;
+}
+
+.lista ul {
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 0.95;
+}
+
+.lista>li {
+    margin: 15px;
+}
+
+.comida,
+.disco,
+.zona {
+    width: 400px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 15px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.comida img,
+.disco img,
+.zona img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.comida h2,
+.disco h3,
+.zona h1 {
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.comida p,
+.disco p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.comida ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.comida ul li {
+    padding: 5px 0;
+    border-bottom: 1px dashed #ccc;
+}
+
+.comida ul li:last-child {
+    border-bottom: none;
+    font-style: italic;
+    color: #888;
+}
+
+/*Seccion de Boletos*/
+/*Fondo genral*/
+body {
+    margin: 0;
+    padding: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/*Titulo principal*/
+#inicio {
+    text-align: center;
+    font-size: 36px;
+    color: #f2f2f2;
+    letter-spacing: 2px;
+}
+
+/*Agrupar tarjetas*/
+.contenedor-tarjetas,
+.contenedor-zonas,
+.contenedor-artistas {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+/*Tarjetas*/
+.card {
+    width: 280px;
+    padding: 25px;
+    border: 2px solid #dddddd;
+    margin: 10px auto;
+    border-radius: 15px;
+
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+    text-align: center;
+}
+
+/*Titulo Boleto*/
+.General h2,
+.Gradas h2,
+.VIP h2 {
+    font-size: 25px;
+    margin-top: 0;
+}
+
+
+/* Precios */
+.General p,
+.Gradas p,
+.VIP p {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2f6f8f;
+}
+
+.card ol {
+    text-align: left;
+    line-height: 1.6;
+    min-height: 120px;
+    padding-left: 25px;
+}
+
+/* Pseudoclases */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.25);
+}
+
+button {
+    background-color: #2f6f8f;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    padding: 12px 25px;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #224f66;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+#Comprar {
+    border-radius: 10px;
+}
+
+#Comprar:hover {
+    background-color: #224f66;
+}
+
+#Comprar:active {
+    transform: scale(0.95);
+}
